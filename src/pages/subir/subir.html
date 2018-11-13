@@ -13,7 +13,7 @@
         Cerrar
       </button>
     </ion-buttons>
-    <ion-title>Crear Post</ion-title>
+    <ion-title>{{titulo | placeHolder: 'Crear Post'}}</ion-title>
   </ion-navbar>
 
 </ion-header>
@@ -23,8 +23,8 @@
     <ion-list>
 
         <ion-item>
-          <ion-label floating>Username</ion-label>
-          <ion-input type="text"></ion-input>
+          <ion-label floating>Titulo</ion-label>
+          <ion-input type="text" [(ngModel)]="titulo"></ion-input>
         </ion-item>
 
         <ion-item >

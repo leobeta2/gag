@@ -10,13 +10,13 @@
 
 <ion-content >
 
-    <ion-card>
+    <ion-card *ngFor="let post of posts | async">
   
-        <img src="https://i.ytimg.com/vi/VZf5uCWFrlA/hqdefault.jpg">
+        <img [src]="post.img">
       
         <ion-card-content>
           <ion-card-title>
-            Post 1
+            {{post.titulo}}
           </ion-card-title>
         </ion-card-content>
 
